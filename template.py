@@ -5,7 +5,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-project_name = "mlflow-e2e"
+project_name = "mlflow_e2e"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
@@ -23,7 +23,7 @@ list_of_files = [
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
-    "templates/index.html"
+    "templates/index.html",
 ]
 
 for file_path in list_of_files:
@@ -32,10 +32,10 @@ for file_path in list_of_files:
     if dir_path and not os.path.exists(dir_path):
         os.makedirs(dir_path)
         logging.info(f"Created directory: {dir_path}")
-        
+
     # Create the file if it does not exist
     if not os.path.exists(file_path):
-        with open(file_path, 'w') as f:
+        with open(file_path, "w") as f:
             pass
         logging.info(f"Created file: {file_path}")
     else:
