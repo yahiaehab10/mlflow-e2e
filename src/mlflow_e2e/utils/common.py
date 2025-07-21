@@ -4,7 +4,7 @@ from mlflow_e2e import logger
 import json
 import joblib
 from ensure import ensure_annotations
-from box.box import Box
+from box import Box
 from box.exceptions import BoxValueError
 from pathlib import Path
 from typing import Any
