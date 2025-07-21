@@ -26,17 +26,19 @@ list_of_files = [
     "templates/index.html",
 ]
 
-for file_path in list_of_files:
-    # Create directories if they do not exist
-    dir_path = os.path.dirname(file_path)
-    if dir_path and not os.path.exists(dir_path):
-        os.makedirs(dir_path)
-        logging.info(f"Created directory: {dir_path}")
 
-    # Create the file if it does not exist
-    if not os.path.exists(file_path):
-        with open(file_path, "w") as f:
+for filepath in list_of_files:
+    filepath = Path(filepath)
+    filedir, filename = os.path.split(filepath)
+
+    if filedir != "":
+        os.makedirs(filedir, exist_ok=True)
+        logging.info(f"Creating directory; {filedir} for the file: {filename}")
+
+    if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
+        with open(filepath, "w") as f:
             pass
-        logging.info(f"Created file: {file_path}")
+            logging.info(f"Creating empty file: {filepath}")
+
     else:
-        logging.info(f"File already exists: {file_path}")
+        logging.info(f"{filename} is already exists")

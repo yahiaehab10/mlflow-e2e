@@ -1,3 +1,3 @@
-# from src.mlflow-e2e import logger
+from src.mlflow_e2e import logger
 
-# logger.info("Welcome to the MLflow E2E project!")
+logger.info("Welcome to the MLflow E2E project!")
