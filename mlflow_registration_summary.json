@@ -1,0 +1,30 @@
+{
+  "model_name": "ChestCTScanClassifier",
+  "registration_status": "SUCCESS",
+  "true_test_accuracy": 0.9701492786407471,
+  "true_test_loss": 0.1571955680847168,
+  "data_leakage_fixed": true,
+  "parameters_logged": {
+    "AUGMENTATION": true,
+    "IMAGE_SIZE": [
+      224,
+      224,
+      3
+    ],
+    "BATCH_SIZE": 16,
+    "INCLUDE_TOP": false,
+    "EPOCHS": 1,
+    "CLASSES": 2,
+    "WEIGHTS": "imagenet",
+    "LEARNING_RATE": 0.01
+  },
+  "mlflow_uri": "https://dagshub.com/yahiaehab10/mlflow-e2e.mlflow",
+  "artifacts_available": [
+    "scores_corrected.json",
+    "model_card.md",
+    "model_summary.txt",
+    "params.yaml",
+    "config.yaml",
+    "temp_model.keras"
+  ]
+}
