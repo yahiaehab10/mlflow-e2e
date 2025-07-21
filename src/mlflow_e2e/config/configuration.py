@@ -75,9 +75,9 @@ class ConfigurationManager:
 
     def get_evaluation_config(self) -> EvaluationConfig:
         eval_config = EvaluationConfig(
-            path_of_model="artifacts/training/model.h5",
-            training_data="artifacts/data_ingestion/Chest-CT-Scan-data",
-            mlflow_uri="https://dagshub.com/entbappy/chest-Disease-Classification-MLflow-DVC.mlflow",
+            path_of_model=Path(self.config.evaluation.model_path),
+            training_data=Path(self.config.evaluation.data_path),
+            mlflow_uri="https://dagshub.com/yahiaehab10/mlflow-e2e.mlflow",
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
             params_batch_size=self.params.BATCH_SIZE,

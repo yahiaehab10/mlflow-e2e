@@ -1,9 +1,0 @@
-{
-  "true_test_loss": 0.1571955680847168,
-  "true_test_accuracy": 0.9701492786407471,
-  "leaked_validation_loss": 0.037455,
-  "leaked_validation_accuracy": 1.0,
-  "data_leakage_detected": true,
-  "test_set_size": 67,
-  "train_set_size": 264
-}
