@@ -1,11 +1,11 @@
 import os
-from box.exceptions import BoxValueError
 import yaml
-from src.mlflow_e2e import logger
+from mlflow_e2e import logger
 import json
 import joblib
 from ensure import ensure_annotations
-from box import Box
+from box.box import Box
+from box.exceptions import BoxValueError
 from pathlib import Path
 from typing import Any
 import base64
