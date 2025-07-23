@@ -209,3 +209,13 @@ __marimo__/
 # data
 data
 artifacts
+
+FINAL_STATUS.md
+QUICK_START.md
+dvc.yaml
+view_experiments.py
+project_summary.pyml_flow.py
+
+
+
+
